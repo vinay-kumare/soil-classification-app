@@ -1,0 +1,114 @@
+.App {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background: linear-gradient(to bottom right, #ffffff, #f8f9fa);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+h1 {
+  color: #2d3436;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 3px solid #00b894;
+  padding-bottom: 1rem;
+}
+
+input[type="file"] {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 2px solid #dfe6e9;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+input[type="file"]:focus {
+  outline: none;
+  border-color: #00b894;
+  box-shadow: 0 0 0 3px rgba(0, 184, 148, 0.1);
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #00b894;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background-color: #00a884;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 184, 148, 0.2);
+}
+
+.error {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #fff5f5;
+  color: #e53e3e;
+  border-radius: 8px;
+  text-align: center;
+  border-left: 4px solid #e53e3e;
+  font-size: 0.95rem;
+}
+
+.result {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #f0fff4;
+  border-radius: 8px;
+  border-left: 4px solid #00b894;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in;
+  font-weight: 400;
+}
+
+.result h2 {
+  color: #00b894;
+  margin: 0 0 1rem 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .App {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+}
+
+.result p {
+  font-size: 1.2rem;
+  /* Adjust size as needed */
+  font-weight: 500;
+  line-height: 1.5;
+}
